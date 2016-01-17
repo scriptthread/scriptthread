@@ -9,7 +9,7 @@ var lessMiddleware = require('less-middleware');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var angular1 = require('./routes/angular1');
+var angularBlogPost = require('./routes/angular-blog-post');
 
 var app = express();
 
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/angular1', angular1);
+app.use('/angular-blog-post', angularBlogPost);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
