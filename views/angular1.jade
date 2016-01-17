@@ -1,0 +1,134 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title &ltScriptThread/&gt
+    // Bootstrap Core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='css/clean-blog.min.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    // Navigation
+    nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') &ltScriptThread/&gt
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/') Home
+            li
+              a(href='about.html') Code
+            li
+              a(href='post.html') Lifestyle
+            li
+              a(href='contact.html') Apparel
+            li
+              a(href='contact.html') Resources
+        // /.navbar-collapse
+      // /.container
+    // Page Header
+    // Set your background image for this header on the line below.
+    header.intro-header(style="background-image: url('img/angular-bg.png')")
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            .post-heading
+              h1 AngularJS 
+              h2.subheading Features, resources and more...
+              span.meta
+                | Posted by Nicholas Guerra
+                a(href='#')  _Code
+                |  on January 13, 2016
+    // Post Content
+    article
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            h2.section-heading Why AngularJS?
+            blockquote
+              | AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop. - angularJS.org
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AngularJS is an open-source MVC framework developed in 2009 by Google for CRUD (create, read, update, delete) single page web applications (SPA’s). It improves HTML, reduces the amount of code you would otherwise have to write, makes data-binding a breeze, lowers possibility for error and makes many common tasks effortless. Below is an example of plain JavaScript vs. AngularJS:
+            span.caption.text-muted Plain JavaScript
+            img.img-responsive(src='img/angular-ex1.png', alt='')
+            span.caption.text-muted AngularJS
+            img.img-responsive(src='img/angular-ex2.png', alt='')
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The AngularJS library provides dozens of functions and directives to jumpstart your application. <b><em>Ng-app</em></b> provides module scope, <b><em>ng-init</em></b> to initialize javascript variables, and <b><em>ng-bind</em></b> for evaluating expressions, to name a few. In addition to what comes “out-of-the-box”, Angular’s community has produced numerous third party libraries making problem solving a google search away in most cases.
+            h2.section-heading The A In MEAN
+            img.img-responsive(src='img/mean.png', alt='')
+            span.caption.text-muted
+              | The MEAN stack.
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;People love JavaScript. According to a recent survey of over 26k stackoverflow users, JavaScript has been the most widely used technology since 2014. With the recent development of server and database technologies, it seems safe to assume this popularity will continue to grow, or at least maintain, for the next decade. 
+            h2.section-heading Finally,
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular is an attractive solution, however, the reduction of code generally means a higher level of abstraction, and in this case, it is no different. The cost of abstraction, of course, is loss of freedom and therefor choosing when to use Angular becomes important.
+            h2.section-heading Learning Resources
+            div(id='resources')
+              ul
+                li 
+                  a(href='https://docs.angularjs.org/api') Official AngularJS Docs
+                li
+                  a(href='http://www.angularjsbook.com/') Fun AngularJs Crash Course
+                li
+                  a(href='https://www.codecademy.com/learn/learn-angularjs') CodeAcademy
+                li
+                  a(href='http://www.w3schools.com/angular/') W3Schools
+            p
+              | Placeholder text by 
+              a(href='http://spaceipsum.com/') Space Ipsum
+              | . Photographs by 
+              a(href='https://www.flickr.com/photos/nasacommons/') NASA on The Commons
+              | .
+    hr
+    // Footer
+    footer
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            ul.list-inline.text-center
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-github.fa-stack-1x.fa-inverse
+            p.copyright.text-muted Copyright © Your Website 2014
+    // jQuery
+    script(src='js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Custom Theme JavaScript
+    script(src='js/clean-blog.min.js')

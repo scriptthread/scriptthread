@@ -1,0 +1,9 @@
+h2, #resources {
+    text-align: center;
+}
+#resources a {
+    color: gold;
+}
+#resources ul {
+    list-style: none;
+}
