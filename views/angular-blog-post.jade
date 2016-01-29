@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    title &ltScriptThread/&gt
+    title &lt/ScriptThread&gt
     // Bootstrap Core CSS
     link(href='css/bootstrap.min.css', rel='stylesheet')
     // Custom CSS
@@ -32,20 +32,20 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') &ltScriptThread/&gt
+          a.navbar-brand(href='/') &lt/ScriptThread&gt
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
               a(href='/') Home
             li
-              a(href='about.html') Code
+              a(href='/angular-blog-post') Code
             li
-              a(href='post.html') Lifestyle
-            li
-              a(href='contact.html') Apparel
+              a(href='post.html') About
             li
               a(href='contact.html') Resources
+            li
+              a(href='contact.html') Contact
         // /.navbar-collapse
       // /.container
     // Page Header
@@ -56,10 +56,10 @@ html(lang='en')
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
             .post-heading
               h1 AngularJS 
-              h2.subheading Features, resources and more...
+              h2.subheading Features and Resources
               span.meta
                 | Posted by Nicholas Guerra
-                a(href='#')  _Code
+                a(href='#')  &lt/ScriptThread&gt
                 |  on January 13, 2016
     // Post Content
     article
@@ -70,11 +70,11 @@ html(lang='en')
             blockquote
               | AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop. - angularJS.org
             p
-              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AngularJS is an open-source MVC framework developed in 2009 by Google for CRUD (create, read, update, delete) single page web applications (SPA’s). It improves HTML, reduces the amount of code you would otherwise have to write, makes data-binding a breeze, lowers possibility for error and makes many common tasks effortless. Below is an example of plain JavaScript vs. AngularJS:
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AngularJS is an open-source MVC framework developed in 2009 by Google for CRUD (create, read, update, delete) single page web applications (SPA’s). It improves HTML, reduces the amount of code you would otherwise have to write, makes data-binding a breeze, lowers possibility for error and makes many common tasks effortless. Below is an example of data-binding with plain JavaScript vs. AngularJS:
             span.caption.text-muted Plain JavaScript
-            img.img-responsive(src='img/angular-ex1.png', alt='')
+            img.img-responsive(src='img/angularjs/Data_Binding_PlainJS.png', alt='plain javascript data-binding')
             span.caption.text-muted AngularJS
-            img.img-responsive(src='img/angular-ex2.png', alt='')
+            img.img-responsive(src='img/angularjs/Data_Binding_Angular_ex1.png', alt='angular js data-binding')
             p
               | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The AngularJS library provides dozens of functions and directives to jumpstart your application. <b><em>Ng-app</em></b> provides module scope, <b><em>ng-init</em></b> to initialize javascript variables, and <b><em>ng-bind</em></b> for evaluating expressions, to name a few. In addition to what comes “out-of-the-box”, Angular’s community has produced numerous third party libraries making problem solving a google search away in most cases.
             h2.section-heading The A In MEAN
@@ -82,10 +82,10 @@ html(lang='en')
             span.caption.text-muted
               | The MEAN stack.
             p
-              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;People love JavaScript. According to a recent survey of over 26k stackoverflow users, JavaScript has been the most widely used technology since 2014. With the recent development of server and database technologies, it seems safe to assume this popularity will continue to grow, or at least maintain, for the next decade. 
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular fits in nicely with the rest of the MEAN development stack because it is applicable to many common tasks and it is written in JavaScript. According to a recent survey of over 26k stackoverflow users, JavaScript has been the most widely used technology since 2014. With the recent development of server (express & NodeJS) and database (mongodb) technologies, it seems safe to assume this popularity will continue to grow, or at least maintain, for the next decade. 
             h2.section-heading Finally,
             p
-              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular is an attractive solution, however, the reduction of code generally means a higher level of abstraction, and in this case, it is no different. The cost of abstraction, of course, is loss of freedom and therefor choosing when to use Angular becomes important.
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular is an attractive solution, however, a higher level of abstraction means limited functionality in some cases. Choosing the right framework is important when starting a large project and we'll be covering a few other frameworks, like #[a(href="react-blog-post") ReactJS], to help you make the right choice.
             h2.section-heading Learning Resources
             div(id='resources')
               ul
