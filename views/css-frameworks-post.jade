@@ -11,6 +11,7 @@ html(lang='en')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     // Custom CSS
     link(href='css/clean-blog.min.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
     // Custom Fonts
     link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel='stylesheet', type='text/css')
@@ -49,64 +50,48 @@ html(lang='en')
       // /.container
     // Page Header
     // Set your background image for this header on the line below.
-    header.intro-header(style="background-image: url('img/coffee.jpeg')")
+    header.intro-header(style="background-image: url('img/angular-bg.png')")
       .container
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-            .site-heading
-              h1 Spotlight
-              hr.small
-              span.subheading JavaScript, CSS, HTML and more...
-    // Main Content
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-          .post-preview
-            a(href='angular-blog-post')
-              h2.post-title
-                | AngularJS
-              h3.post-subtitle
-                | Features and Resources
-            p.post-meta
-              | Posted by 
-              a(href='#') Nicholas Guerra
-              |  on January 13, 2016
-          hr
-          .post-preview
-            a(href='post.html')
-              h2.post-title
-                | Top 3 Bootstrap Alternatives
-            p.post-meta
-              | Posted by 
-              a(href='#') Nicholas Guerra
-              |  on February 11, 2016
-          hr
-          .post-preview
-            a(href='post.html')
-              h2.post-title
-                | Jade, EJS and Hogan
-              h3.post-subtitle
-                | Choosing the right view engine based on your programming background
-            p.post-meta
-              | Posted by 
-              a(href='#') Nicholas Guerra
-              |  on November 11, 2015
-          hr
-          .post-preview
-            a(href='post.html')
-              h2.post-title
-                | NPM Hidden Gems
-              h3.post-subtitle
-                | Useful NPM Resources
-            p.post-meta
-              | Posted by 
-              a(href='#') Nicholas Guerra
-              |  on November 11, 2015
-          hr
-          // Pager
-          ul.pager
-            li.next
-              a(href='#') Older Posts →
+            .post-heading
+              h1 Top 3 Bootstrap Alternatives 
+              h2.subheading Lightweight, customizable CSS to start use on your next project.
+              span.meta
+                | Posted by Nicholas Guerra
+                a(href='#')  &lt/ScriptThread&gt
+                |  on January 13, 2016
+    // Post Content
+    article
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            h2.section-heading Skeleton
+            h2.subheading A dead simple, responsive boilerplate.
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skeleton is a boilerplate made for smaller projects that don’t need the weight of a full UI framework. It was built with mobile design in mind and its typography, 12 column fluid grid, and style work fantastic together.
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The AngularJS library provides dozens of functions and directives to jumpstart your application. <b><em>Ng-app</em></b> provides module scope, <b><em>ng-init</em></b> to initialize javascript variables, and <b><em>ng-bind</em></b> for evaluating expressions, to name a few. In addition to what comes “out-of-the-box”, Angular’s community has produced numerous third party libraries making problem solving a google search away in most cases.
+            h2.section-heading The A In MEAN
+            img.img-responsive(src='img/mean.png', alt='')
+            span.caption.text-muted
+              | The MEAN stack.
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular fits in nicely with the rest of the MEAN development stack because it is applicable to many common tasks and it is written in JavaScript. According to a recent survey of over 26k stackoverflow users, JavaScript has been the most widely used technology since 2014. With the recent development of server (express & NodeJS) and database (mongodb) technologies, it seems safe to assume this popularity will continue to grow, or at least maintain, for the next decade. 
+            h2.section-heading Finally,
+            p
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular is an attractive solution, however, a higher level of abstraction means limited functionality in some cases. Choosing the right framework is important when starting a large project and we'll be covering a few other frameworks, like #[a(href="react-blog-post") ReactJS], to help you make the right choice.
+            h2.section-heading Learning Resources
+            div(id='resources')
+              ul
+                li 
+                  a(href='https://docs.angularjs.org/api') Official AngularJS Docs
+                li
+                  a(href='http://www.angularjsbook.com/') Fun AngularJs Crash Course
+                li
+                  a(href='https://www.codecademy.com/learn/learn-angularjs') CodeAcademy
+                li
+                  a(href='http://www.w3schools.com/angular/') W3Schools
     hr
     // Footer
     footer
@@ -129,7 +114,7 @@ html(lang='en')
                   span.fa-stack.fa-lg
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-github.fa-stack-1x.fa-inverse
-            p.copyright.text-muted Copyright © ScriptThread 2016
+            p.copyright.text-muted Copyright © ScriptThread.com 2016
     // jQuery
     script(src='js/jquery.js')
     // Bootstrap Core JavaScript
